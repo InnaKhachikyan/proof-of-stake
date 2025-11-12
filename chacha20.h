@@ -4,6 +4,6 @@
 #include <stdint.h>
 #include <stddef.h>
 
-int chacha20_generate(const uint8_t *key, const uint8_t *nonce, uint32_t *output, size_t count);
+int chacha20_unique_mod_0_999(const uint8_t *key_in, const uint8_t *nonce_in, uint32_t rand_nums[320]);
 
 #endif
